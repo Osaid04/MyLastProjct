@@ -1,0 +1,238 @@
+/*
+style for body
+*/
+body{
+ background: fixed;   
+ font-size: 16px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;     
+background-color:aqua;
+background-image: url(bc.jpg) ;
+}
+
+/*  style for input field*/
+input{
+    margin: 15px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: aquamarine;
+    padding: 10px;
+   
+}
+/* flex contaner to show the elemnt in row direction for the header */
+.flexcontainer{
+    background-image: url(bc.jpg) ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    border-radius: 15px;
+}
+/* style for h1 that in flexcontainer for postion and shadow */ 
+.flexcontainer h1{
+    text-shadow: 2px 5px 3px rgb(33, 122, 122);
+    position: relative;
+    right: 1080px;
+}
+/* style for a that in flexcontainer for postion and remove line inder the text */ 
+.flexcontainer a{
+   text-decoration-line:none ;
+    position: relative;
+    top: 10px;
+    right: 60px;
+}
+/* style for image that in flexcontainer for postion */ 
+.flexcontainer img{
+    
+     position: relative;
+     top: 15px;
+     right: 1060px;
+ }
+ /* srtye for the navbar using flex in coulmn direction for main.html */
+ .flexmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    width: 160px;
+    height: 600px;
+}
+/* style for the navigation using the flexbox that in flexmain class in main.html */
+.flexmain nav{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+
+}
+/*style for images that in flexmain class to make the photo border circle in main.html*/
+.flexmain img{
+    border-radius: 50%;
+}
+/*style for a that in flexmain class in main.html for postion and shadow and color */
+.flexmain a{
+text-shadow: 2px 2px 2px aqua;
+flex-wrap: wrap;
+color:black;
+text-decoration-line:none ;
+margin-top: 30px;
+}
+/*style for h3 that in flexmain class in main.html for postion  */
+.flexmain h3{
+    text-shadow: 2px 2px 1px aqua;
+}
+/* style for section about me in main.html and elemnt using nesting css*/
+.me{
+   position: relative; 
+    left: 400px;
+    bottom: 430px;
+
+}
+.me h2{
+   
+    text-shadow: 2px 2px 2px aqua;
+    position: relative;
+left: 30px;
+}
+/* style for section family for the table in main.html and elemnt using nesting css*/
+.family{
+    
+    position: relative;
+    left: 700px;
+    bottom:900px;
+    color: black;
+    text-shadow: 2px 2px 2px aqua;
+}
+.family caption{
+    font-size: 25px;
+    font-weight: bold;
+    color:black;
+    text-shadow: 2px 2px 2px aqua;
+}
+/* styling for footer that have the contact me details in main.html */
+footer{
+   
+    position: relative;
+   left: 600px;
+    bottom: 800px;
+    width: 900px;
+    
+}
+/* style for the project.html for the project to showen in grid*/
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2,auto);
+    justify-content: space-between;
+    align-items: center;
+   width: 800px;
+   height: 400px;
+   position: relative;
+    left: 150px;
+    bottom: 560px;
+    margin: -40px;
+
+}
+/* style for the child of gridcontain in project.html*/
+.child{
+    border: 1px solid black;
+   padding: 150px;
+    height: 50px;
+    margin: 80px  ;
+    background-image: url(bc.jpg) ;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}  
+.child a img{
+    width: 200px;
+    height: 120px;
+    position: relative;
+    right: 80px;
+    bottom:120px ;
+}
+.child p{
+    text-shadow: 2px 2px 2px aqua;
+    position: relative;
+   bottom: 70px;
+    right: 30px;
+   
+}
+/* flexbox for the navigtain bar for the elemnt in coulmn direction in profile.html and skills .html*/
+.flexskillsprojects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    width: 160px;
+    height: 600px;
+    
+}
+/* flexbox for navbar and other elemnt in flexskillsproject flexbox in profile.html and skills.html*/
+.flexskillsprojects nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 80px;
+}
+.flexskillsprojects h3{
+    text-shadow: 2px 2px 2px aqua;
+    position: relative;
+    bottom: 150px;
+}
+.flexskillsprojects a{
+    text-shadow: 2px 2px 2px aqua;
+    flex-wrap: wrap;
+    color:black;
+    text-decoration-line:none ;
+    margin-top: 30px;
+    position: relative;    
+    bottom: 200px;
+}   
+.flexskillsprojects img{
+    border-radius: 50%;
+}
+/*  class intrest for intrest section in skill.html and for ol li and postion and shadow*/
+.interest{
+    text-shadow: 2px 2px 1px aqua;
+    position: relative;
+    left: 300px;
+    bottom: 300px;
+    color: black;
+    
+}
+.interest ol li{
+    margin-top:20px;
+}
+/* skills class for skills section in skill.html for postion and shaddow and for ul li*/
+.skills{
+    text-shadow: 2px 2px 1px aqua;
+    position: relative;
+    bottom: 600px;
+    left: 700px;
+}
+.skills ul li{
+    margin-top: 20px;
+}
+/* classes for styling postion of skill photo and hoppyphoto in skills.html and for radius*/
+.skillphoto{
+position: relative;
+bottom: 1100px;
+left: 640px;
+border-radius: 50%;
+}
+.hoppyphoto{
+    position: relative;
+    bottom: 1100px;
+    left: 170px;
+    border-radius: 50%;
+    }
