@@ -259,3 +259,7 @@ border-radius: 50%;
     left: 170px;
     border-radius: 50%;
     }
+footer textarea{
+    border: 2px solid black;
+    border-radius: 15px;
+}
