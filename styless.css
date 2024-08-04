@@ -6,30 +6,36 @@ body{
  font-size: 16px;
  font-family: Arial, Helvetica, sans-serif;
  font-weight: bold;     
-background-color:aqua;
-background-image: url(bc.jpg) ;
+background-image: url(bc.jpg);
+background-repeat:no-repeat ;
+background-size: cover;
+width: 100%;
 }
-
+label{
+    color: aliceblue;
+}
 /*  style for input field*/
 input{
     margin: 15px;
     border-radius: 15px;
     border-style: solid;
-    border-color: aquamarine;
+    border-color:black;
     padding: 10px;
-   
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
 }
 /* flex contaner to show the elemnt in row direction for the header */
 .flexcontainer{
-    background-image: url(bc.jpg) ;
+ 
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
     border-radius: 15px;
+    width: 100%;
 }
 /* style for h1 that in flexcontainer for postion and shadow */ 
 .flexcontainer h1{
-    text-shadow: 2px 5px 3px rgb(33, 122, 122);
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color: rgb(236, 236, 232);   
     position: relative;
     right: 1080px;
 }
@@ -42,20 +48,20 @@ input{
 }
 /* style for image that in flexcontainer for postion */ 
 .flexcontainer img{
-    
      position: relative;
      top: 15px;
      right: 1060px;
  }
  /* srtye for the navbar using flex in coulmn direction for main.html */
  .flexmain{
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position: relative;
     top: 80px;
-    border: 1px solid aqua;
+    border: 1px solid black;
     border-radius: 15px;
     width: 160px;
     height: 600px;
@@ -66,23 +72,26 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 position: relative;
-
+text-shadow: 2px 2px 9px rgb(114, 116, 117);
 }
 /*style for images that in flexmain class to make the photo border circle in main.html*/
 .flexmain img{
+   padding: 20px;
     border-radius: 50%;
 }
 /*style for a that in flexmain class in main.html for postion and shadow and color */
 .flexmain a{
-text-shadow: 2px 2px 2px aqua;
+
 flex-wrap: wrap;
-color:black;
+text-shadow: 2px 2px 9px rgb(114, 116, 117);
+color:rgb(236, 236, 232);
 text-decoration-line:none ;
 margin-top: 30px;
 }
 /*style for h3 that in flexmain class in main.html for postion  */
 .flexmain h3{
-    text-shadow: 2px 2px 1px aqua;
+color: rgb(236, 236, 232);
+text-shadow: 2px 2px 9px rgb(114, 116, 117);
 }
 /* style for section about me in main.html and elemnt using nesting css*/
 .me{
@@ -92,10 +101,14 @@ margin-top: 30px;
 
 }
 .me h2{
-   
-    text-shadow: 2px 2px 2px aqua;
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color: rgb(236, 236, 232);
     position: relative;
 left: 30px;
+}
+.me p{
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color: aliceblue;
 }
 /* style for section family for the table in main.html and elemnt using nesting css*/
 .family{
@@ -103,45 +116,52 @@ left: 30px;
     position: relative;
     left: 700px;
     bottom:900px;
-    color: black;
-    text-shadow: 2px 2px 2px aqua;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
 }
 .family caption{
     font-size: 25px;
     font-weight: bold;
-    color:black;
-    text-shadow: 2px 2px 2px aqua;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
 }
 /* styling for footer that have the contact me details in main.html */
 footer{
-   
+
     position: relative;
    left: 600px;
     bottom: 800px;
     width: 900px;
     
 }
+ form{
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
 /* style for the project.html for the project to showen in grid*/
 .gridcontainer{
     display: grid;
     grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(2,auto);
-    justify-content: space-between;
-    align-items: center;
-   width: 800px;
-   height: 400px;
+    justify-content: space-between;  
+    width: 800px;
    position: relative;
-    left: 150px;
+    left: 170px;
     bottom: 560px;
     margin: -40px;
 
 }
 /* style for the child of gridcontain in project.html*/
 .child{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
     border: 1px solid black;
-   padding: 150px;
-    height: 50px;
-    margin: 80px  ;
+   padding: 100px;
+    height: 5px;
+   margin: 70px ;
     background-image: url(bc.jpg) ;
     font-size: 30px;
     font-weight: bold;
@@ -149,17 +169,14 @@ footer{
    
 }  
 .child a img{
-    width: 200px;
-    height: 120px;
-    position: relative;
-    right: 80px;
-    bottom:120px ;
+  
+   height: 80px;
+  
 }
 .child p{
-    text-shadow: 2px 2px 2px aqua;
-    position: relative;
-   bottom: 70px;
-    right: 30px;
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color: aliceblue;
+    
    
 }
 /* flexbox for the navigtain bar for the elemnt in coulmn direction in profile.html and skills .html*/
@@ -169,8 +186,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 80px;
-    border: 1px solid aqua;
+    top: 70px;
+    border: 1px solid black;
     border-radius: 15px;
     width: 160px;
     height: 600px;
@@ -185,29 +202,33 @@ footer{
     bottom: 80px;
 }
 .flexskillsprojects h3{
-    text-shadow: 2px 2px 2px aqua;
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color: aliceblue;
     position: relative;
     bottom: 150px;
 }
 .flexskillsprojects a{
-    text-shadow: 2px 2px 2px aqua;
+  
     flex-wrap: wrap;
-    color:black;
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color: rgb(255, 255, 255);
     text-decoration-line:none ;
     margin-top: 30px;
     position: relative;    
     bottom: 200px;
 }   
 .flexskillsprojects img{
+   padding: 20px;
     border-radius: 50%;
 }
 /*  class intrest for intrest section in skill.html and for ol li and postion and shadow*/
 .interest{
-    text-shadow: 2px 2px 1px aqua;
+   
     position: relative;
     left: 300px;
     bottom: 300px;
-    color: black;
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
+    color:  rgb(255, 255, 255);
     
 }
 .interest ol li{
@@ -215,9 +236,10 @@ footer{
 }
 /* skills class for skills section in skill.html for postion and shaddow and for ul li*/
 .skills{
-    text-shadow: 2px 2px 1px aqua;
+    color: aliceblue;
+    text-shadow: 2px 2px 9px rgb(114, 116, 117);
     position: relative;
-    bottom: 600px;
+    bottom: 570px;
     left: 700px;
 }
 .skills ul li{
@@ -226,9 +248,10 @@ footer{
 /* classes for styling postion of skill photo and hoppyphoto in skills.html and for radius*/
 .skillphoto{
 position: relative;
-bottom: 1100px;
+bottom: 1060px;
 left: 640px;
 border-radius: 50%;
+
 }
 .hoppyphoto{
     position: relative;
