@@ -3,21 +3,24 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background: url(33.jpg) no-repeat center center fixed;
+    background: url(assests/33.jpg) no-repeat center center fixed;
     background-size: cover;
     ;
 }
 /* style for the left menu for all pages*/
 .sidebar {
-    height: 50%;
-    width: 200px;
+    height: 100%;
+    width: 300px;
     position: fixed;
     top: 90px;
     left: 0;
     background-color: #111;
     padding-top: 20px;
 }
-
+.sidebar img{
+    position: relative;
+    left: 30px;
+}
 .sidebar a {
     padding: 15px 16px;
     text-decoration: none;
@@ -30,21 +33,7 @@ body {
     background-color: #575757;
 }
 /* style fot the pargraph in bottom of leftmenu*/
-.defention{
-    height: 50%;
-    width: 200px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #111;
-    padding-top: 20px;
 
-}
-.defention h1{
-    color: white;
-    position: relative;
-    left: 10px;
-}
 /* style of the navbar in top for the h1 and img*/
 .flex-container{
     display: flex;
@@ -87,6 +76,7 @@ text-decoration-line:none ;
 /* style for the about me and family table in main.html*/
 .main-flex{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: fixed;
@@ -99,39 +89,42 @@ text-decoration-line:none ;
 .me{
     display: flex;    
     flex-direction: column;
-    position: relative;
     align-items: center;
-    right: 400px;
-   
+    position: relative;
+    right: 100px;
+    bottom: 30px;
     color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 20px;
 }
 .me a{
     color: rgb(255, 255, 255);
 }
 .me p{
+    padding: 10px;
     height: 100px;
-    width: 200px;
+    width: 700px;
 }
 /* for family section*/
 .family{
-   display: flex;
-   flex-direction: column; 
-   align-items: center;
    position: relative;
     right: 100px;
-    color: rgb(255, 255, 255);
-  
+    color: rgb(255, 255, 255); 
 }
+
 /* style for the projects container ad grid in project.html*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(2,auto);
+    justify-content: space-around;
     margin-top: 20px;
-    justify-content: space-between;
-    width: 800px;
-   position: fixed;
-   left: 300px;
+    width: 900px;
+   position: relative;
+   left: 360px;
+    top: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
 
 }
 /* style for the child of gridcontain in project.html*/
@@ -143,12 +136,13 @@ text-decoration-line:none ;
     border: 1px solid black;
    padding: 80px;
     height: 5px;
-   margin: 70px ;
+   margin: 30px ;
     background-image: url(33.jpg) ;
     font-size: 30px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
+   position: relative;
+    right: 55px;
 }  
 .child a img{
   
@@ -159,28 +153,23 @@ text-decoration-line:none ;
     text-shadow: 2px 2px 9px rgb(114, 116, 117);
     color: aliceblue;   
 }
-/* style for the interest section and hopy as flex */
-.hobby-interest{
-    display: flex;
-   justify-content: center;
-   align-items: flex-end; 
-   color: wheat;
-    position: relative;
-    top: 150px;
-    left:70px;
-}
-/* style for hoopy section*/
-.hoppy{
-    padding: 50px;
-    font-size: 20px;
-}
+
 /* style for skills section*/
 .skills{
+ 
     padding: 50px;
     margin-left:60px;
     font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    color: azure;
+    position: fixed;
+    left: 300px;
+    top: 100px;
 }
 /* style for contact form in contavt.html */
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -210,4 +199,38 @@ textarea{
 .for-a{
 position: relative;    
 bottom: 8px;
+}
+/* for table style*/
+td{
+padding-left: 80px;
+padding-right: 80px;
+background-color: #111;
+}
+th{
+color: rgb(255, 255, 255);
+background-color: #000000;
+}
+/* for skill item*/
+#skill-h2{
+    position: fixed;
+    top: 100px;
+    left: 700px;
+    color: wheat;
+    text-decoration-line:underline ;
+    ;
+}
+
+.child-skill{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 25px;
+    justify-content: space-between;
+}
+.skills img{
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 5px;
 }
