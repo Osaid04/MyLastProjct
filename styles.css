@@ -116,13 +116,13 @@ text-decoration-line:none ;
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3,100px);
-    grid-template-rows: repeat(2,auto);
-    justify-content: space-around;
+    grid-template-rows: repeat(3,auto);
+    justify-content:space-around;
     margin-top: 20px;
     width: 900px;
    position: relative;
    left: 360px;
-    top: 100px;
+    top: 150px;
     border: 2px solid white;
     border-radius: 20px;
 
@@ -133,27 +133,34 @@ text-decoration-line:none ;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    border: 1px solid black;
-   padding: 80px;
-    height: 5px;
+    border: 1px solid white;
+   padding: 60px;
+   padding-left: 130px;
+   padding-right: 130px;
+   height: 5px;
    margin: 30px ;
-    background-image: url(33.jpg) ;
+ 
+   background-image: url(33.jpg) ;
     font-size: 30px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    position: relative;
-    right: 55px;
+    right: 110px;
 }  
-.child a img{
-  
-   height: 80px;
-  
-}
-.child p{
-    text-shadow: 2px 2px 9px rgb(114, 116, 117);
-    color: aliceblue;   
+.child a {
+    color: aliceblue;
+    text-decoration-line:none ;
+    font-size: 15px;
+margin: 0 10px;
 }
 
+
+.child button{
+    position: relative;
+    top: 60px;
+    left: 110px;
+  color: #000000;
+}
 /* style for skills section*/
 .skills{
  
@@ -234,3 +241,51 @@ background-color: #000000;
     width: 100px;
     margin-bottom: 5px;
 }
+/* add search button*/
+.add-project{
+    position: fixed;
+    left: 600px;
+top: 100px;
+}
+.search-project{
+    position: fixed;
+    left: 600px;
+    top: 150px;
+    
+}
+button{
+border-radius: 20px;
+font-size: 16px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+/* for the name of project*/
+.div-p{
+  
+    width: 220px;
+    height: 60px;
+    position: relative;
+    top: 39px;
+    
+}
+/* for _______________*/
+.div-r p{
+    color: wheat;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    
+}
+/* for the date*/
+.div-date{
+    font-size: 17px;
+    position: relative;
+    bottom: 30px;
+}
+/* some edit in add and search contnent*/
+#additemContent{
+  padding-left: 150px;
+} 
+#searchitemContent{
+    padding-left: 150px;
+} 

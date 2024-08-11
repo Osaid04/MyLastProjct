@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+      
+  </head>
 <body>
     <   <header> 
         <div class="flex-container">
@@ -27,14 +28,24 @@
     <a href="#about">About</a>
     <a href="contact.html">Contact</a>
 </div>
-<!-- grid container to put grid layout for row and coulmn to showen table as grid and classes child for every child and class child1 child2 for specifies elemnt-->
-   <div class="grid-container">
-<div class="child child1"><a href=""><img src="assests/project (4).png" alt="" ></a><p class=>Project1</p></div>
-<div class="child child1"><a href=""><img src="assests/project (4).png" alt=""></a><p class=>Project1</p></div>
-<div class="child child1"><a href=""><img src="assests/project (4).png" alt="" ></a><p class=>Project1</p></div>
-<div class="child child1"><a href=""><img src="assests/project (4).png" alt="" ></a><p class=>Project1</p></div>
-<div class="child child1"><a href=""><img src="assests/project (4).png" alt=""></a><p >Project1</p></div>
-<div class="child child1"><a href=""><img src="assests/project (4).png" alt="" ></a><p >Project1</p></div>
+<div class="add-project">
+    <input type="text" id="additemContent" placeholder="Add Project">
+    <button id="addbtn" onclick="clickon()"> Add </button>
+
 </div>
+<div class="search-project">
+    <input id="searchitemContent" type="text" placeholder="Search for Project">
+    <button id="searchbtn" type="submit" onclick="searchon()"> Search </button>
+ 
+</div>
+<!-- grid container to put grid layout for row and coulmn to showen table as grid and classes child for every child and class child1 child2 for specifies elemnt-->
+<div  class="grid-container" id="gridPane">
+<div  class="child " id="ch"><button class="btn"><img src="assests/close.png" alt="" width="15px" onclick="deleteon()" ></button><a href=""><div class="div-p"><p >C</p></div></a><div class="div-r"><P>____________________</P><div class="div-date"><p>10/7/2024, 12:30:07 PM</p></div></div></div>
+<div class="child" id="ch"><button class="btn"><img src="assests/close.png" alt="" width="15px" onclick="deleteon()" ></button><a href=""><div class="div-p"><p >Java</p></div></a><div class="div-r"><P>____________________</P><div class="div-date"><p>11/7/2024, 12:30:07 PM</p></div></div></div>
+<div class="child " id="ch"><button class="btn"><img src="assests/close.png" alt="" width="15px" onclick="deleteon()" ></button><a href=""><div class="div-p"><p >Lorem ipsum dolor, sit  sas daas dasdas asdasd  sadasd asd  </p></div></a><div class="div-r"><P>____________________</P><div class="div-date"><p>12/7/2024, 12:30:07 PM</p></div></div></div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
