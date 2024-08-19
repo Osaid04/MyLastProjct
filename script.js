@@ -58,7 +58,11 @@ function clickon() {
     
     gridPane.appendChild(child);
     counter++;
-      // Generate a unique key for uniqe element
+   
+
+   
+   
+    // Generate a unique key for uniqe element
       var randomNumber = Math.random();
       var uniqueKey = 'item_'+randomNumber
 
@@ -73,6 +77,50 @@ function clickon() {
       localStorage.setItem(uniqueKey,JSON.stringify(newItem));
  }
 
+
+ const url = 'https://api.github.com/users/octocat/repos';
+
+ fetch(url)
+   .then(response => {
+     if (response.ok) {
+       return response.json(); // Parse the response data as JSON
+     } else {
+       throw new Error('API request failed');
+     }
+   })
+   .then(data => {
+     data.forEach(element => {
+       const title = element.name;
+       const date = element.created_at;
+       let isDuplicate = false;
+ 
+       
+       for (let i = 0; i < localStorage.length; i++) {
+         const key = localStorage.key(i);
+         const storedItem = JSON.parse(localStorage.getItem(key));
+         
+         
+         if (storedItem[0] === title) {
+           isDuplicate = true;
+           break; 
+         }
+       }
+ 
+      
+       if (!isDuplicate) {
+         const uniqueKey = 'item_' + Math.random(); 
+         const newItem = [title, '___________________', date];
+ 
+         localStorage.setItem(uniqueKey, JSON.stringify(newItem)); 
+       }
+     });
+   })
+   .catch(error => {
+     console.error('Error fetching data:', error);
+   });
+ 
+ 
+ 
  function deleteon() {
     var items = document.getElementsByClassName("btn");
 
