@@ -1,0 +1,45 @@
+{
+ "projects":[
+    {
+        "title":"my first Project",
+        "description" : " Caluclater Java app",
+        "link":"#"
+    },
+    {
+        "title":"my HTML Project",
+        "description" : "Profile Page",
+        "link":"#"
+    },
+    {
+        "title":"my Final Project",
+        "description" : " React Project",
+        "link":"#"
+    }
+ ],   
+ "skills":[
+    {
+     "skill-name": "HTML"
+           
+    },
+    {
+        "skill-name": "CSS"
+              
+       },
+       {
+        "skill-name": "JavaScript"
+              
+       },
+       {
+        "skill-name": "Android"
+              
+       },
+       {
+        "skill-name": "Java"
+              
+       }
+
+
+ ]
+}
+
+

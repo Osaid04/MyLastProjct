@@ -1,0 +1,50 @@
+.Main {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+    
+}
+
+.Main-text {
+    margin-left: 50px;
+
+}
+
+.Main-text h1 {
+    color: #ffffff;    
+    font-size: 48px;
+    font-weight: bold;
+}
+.Main-text h1 span {
+    color:  #ffffff;   
+    font-size: 48px;
+    font-weight: bold;
+}
+.Main-text p {
+    font-size: 20px;
+    margin: 20px 0;
+    color:#ffffff; 
+  
+}
+.cta-btn {
+    background-color:  #F06767;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    top: 15px;
+    left: 200px;
+}
+
+

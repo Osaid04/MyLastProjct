@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+color: rgb(10, 165, 255);
+font-size: 18px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#contact-p{
+    text-align: center;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#second-h1{
+position: relative;
+bottom: 370px;
+font-size: 25px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#Social {
+    position: relative;
+    bottom: 280px;
+    left: 250px;
+    padding: 20px;
+    width: 680px;
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    
+    text-align: right;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

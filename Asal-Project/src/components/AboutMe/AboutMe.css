@@ -1,0 +1,41 @@
+h1{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.me{
+  
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.me a{
+    text-decoration-line:none ;
+    color: #00bcd4;
+
+}
+.family{
+     color: rgb(255, 255, 255); 
+       
+    }
+ #h2-family{
+     color: white;
+    
+ }
+ td{
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #1564da;
+    }
+    th{
+    color: #00bcd4;
+    background-color: #fffbfb;
+    }
+    .family caption{
+        font-size: 18px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+.main-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+
+.flex-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 130px;
+    .header-p{
+        color: rgb(10, 165, 255);
+    }
+}
+
+.flex-2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 130px;
+    bottom: 60px;
+    .header-p{
+        color: rgb(10, 165, 255);
+    }
+}
+.flex-3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 130px;
+    bottom: 80px;
+    .header-p{
+        color: rgb(10, 165, 255);
+    }
+}
+
+.info-p{
+   
+    width: 150px;
+    position: relative;
+    bottom: 20px;
+}
+/* for all icons*/
+.photo{
+    width: 30px;
+    position: relative;
+    left: 80px;
+    bottom: 15px;
+    
+}
+/* for address photo i solve some problem*/
+.photo-1{
+    width: 30px;
+    position: relative;
+    left: 80px;
+    top: 40px;
+    
+}
