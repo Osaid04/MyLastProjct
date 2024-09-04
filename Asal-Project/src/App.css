@@ -1,4 +1,4 @@
-/* in this css is style for the body and dev app that showne all components its for all pages and the other styles is for components*/
+/* Default styles (for larger screens) */
 .App {
   background-color: #1c1c1c; 
   width: 87%;
@@ -15,8 +15,52 @@
 }
 
 body {
-  background-image: linear-gradient( #2396e2, #ffffff); 
+  background-image: linear-gradient(#2396e2, #ffffff); 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
 }
 
+/* Media query for tablets (min-width: 768px) */
+@media screen and (max-width: 1024px){
+  .App {
+    background-color: #1c1c1c; 
+    width: 80%;
+  height: 80%;
+  margin: 20px;
+  background: #004676;
+  position: relative;
+  left: 75px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  color: #ffffff; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  }
+  body {
+    background-image: linear-gradient(#2396e2, #ffffff); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+}
+@media screen and (max-width: 680px){
+  .App {
+    background-color: #1c1c1c; 
+    width: 80%;
+  height: 80%;
+  
+  background: #004676;
+  position: relative;
+  left: 75px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  color: #ffffff; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  }
+  body {
+    background-image: linear-gradient(#2396e2, #ffffff); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+}

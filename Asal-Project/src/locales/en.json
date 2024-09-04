@@ -1,0 +1,80 @@
+{
+    "form": {
+      "title": "Send Message",
+      "fullNamePlaceholder": "Full Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Type your Message...",
+      "submitButton": "Send"
+    },
+  
+  
+    "main": {
+      "title": "I AM A",
+      "jobTitle": "Frontend Developer",
+      "description": "As a web designer, I specialize in creating visually appealing and user-friendly websites that help businesses and individuals establish a strong online presence. My focus is on combining aesthetics with functionality, ensuring that each design is not only beautiful but also effective in engaging users and achieving the desired goals. From responsive layouts to intuitive navigation, I strive to deliver designs that are both innovative and practical, tailored to meet the unique needs of each client.",
+      "contactButton": "Contact Me"
+    },
+    
+        "aboutMe": {
+          "title": "About Me",
+          "description": "My name is Osaid Hamayel, and I am 21 years old.<br /> I studied at <a href='https://www.facebook.com/abufalahsc?locale=ar_AR'>Abu Falah Secondary School</a>.<br /> Currently, I am in my third year at <a href='https://www.birzeit.edu/en'>Birzeit University</a>, pursuing a bachelor's degree in computer science.<br /> I am also participating in a summer training program at <a href='https://www.asaltech.com/'>Asal Technologies</a>.",
+          "familyCaption": "Family",
+          "family": {
+            "name": "Name",
+            "age": "Age",
+            "gender": "Gender",
+            "members": [
+              { "name": "Ghassan Hamayel", "age": 45, "gender": "Male" },
+              { "name": "Amal Hamayel", "age": 42, "gender": "Female" },
+              { "name": "Osaid Hamayel", "age": 21, "gender": "Male" },
+              { "name": "Somaya Hamayel", "age": 20, "gender": "Female" },
+              { "name": "Aseel Hamayel", "age": 16, "gender": "Female" },
+              { "name": "Kareem Hamayel", "age": 12, "gender": "Male" }
+            ]
+          }
+        },
+        
+            "projects": {
+              "title": "My Projects",
+              "searchPlaceholder": "Search projects...",
+              "addNewProject": "Add a New Project",
+              "projectTitlePlaceholder": "Project Title",
+              "projectDescriptionPlaceholder": "Project Description",
+              "projectLinkPlaceholder": "Project Link",
+              "addButton": "Add Project",
+              "deleteButton": "Delete",
+              "viewProject": "View Project"
+            },
+            
+                "skills": {
+                  "title": "My Skills",
+                  "html": "HTML",
+                  "css": "CSS",
+                  "java": "Java",
+                  "javascript": "JavaScript",
+                  "androidStudio": "Android Studio",
+                  "percent": {
+                    "90": "90%",
+                    "85": "85%",
+                    "75": "75%",
+                    "70": "70%",
+                    "60": "60%"
+                  }
+                },
+                    "header": {
+                      "home": "Home",
+                      "aboutMe": "About Me",
+                      "projects": "Projects",
+                      "contact": "Contact",
+                      "skills": "Skills"
+                    }
+                  
+                  
+              
+              
+          
+          
+      
+      
+  }
+    

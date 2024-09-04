@@ -1,71 +1,44 @@
 import React from "react";
+import { useTranslation } from "react-i18next"; // Import useTranslation hook
 import './AboutMe.css';
 
 const AboutMe = () => {
+    const { t } = useTranslation(); // Initialize useTranslation hook
+
     return (
         <div>
-            <h1>About Me</h1>
+            <h1>{t('aboutMe.title')}</h1>
             <div className="main-flex">
                 <section>
-                    {/* Class for the about me section */}
                     <div className="me">
-                     
-                        <p>
-                            My name is Osaid Hamayel, and I am 21 years old.<br />
-                            I studied at <a href="https://www.facebook.com/abufalahsc?locale=ar_AR">Abu Falah Secondary School</a>.<br />
-                            Currently, I am in my third year at <a href="https://www.birzeit.edu/en">Birzeit University</a>, pursuing a bachelor's degree in computer science.<br />
-                            I am also participating in a summer training program at <a href="https://www.asaltech.com/">Asal Technologies</a>.
-                        </p>
+                        <p dangerouslySetInnerHTML={{ __html: t('aboutMe.description') }} />
                     </div>
                 </section>
                 <section>
-                    {/* Class for family table */}
                     <table className="family">
-                        <caption>Family</caption>
+                        <caption>{t('aboutMe.familyCaption')}</caption>
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Gender</th>
+                                <th>{t('aboutMe.family.name')}</th>
+                                <th>{t('aboutMe.family.age')}</th>
+                                <th>{t('aboutMe.family.gender')}</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Ghassan Hamayel</td>
-                                <td>45</td>
-                                <td>Male</td>
-                            </tr>
-                            <tr>
-                                <td>Amal Hamayel</td>
-                                <td>42</td>
-                                <td>Female</td>
-                            </tr>
-                            <tr>
-                                <td>Osaid Hamayel</td>
-                                <td>21</td>
-                                <td>Male</td>
-                            </tr>
-                            <tr>
-                                <td>Somaya Hamayel</td>
-                                <td>20</td>
-                                <td>Female</td>
-                            </tr>
-                            <tr>
-                                <td>Aseel Hamayel</td>
-                                <td>16</td>
-                                <td>Female</td>
-                            </tr>
-                            <tr>
-                                <td>Kareem Hamayel</td>
-                                <td>12</td>
-                                <td>Male</td>
-                            </tr>
+                            {/* to return all family memebers as key value using map*/ }
+                            {t('aboutMe.family.members', { returnObjects: true }).map((member, index) => (
+                                <tr key={index}>
+                                    <td>{member.name}</td>
+                                    <td>{member.age}</td>
+                                    <td>{member.gender}</td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </section>
             </div>
-        <br />
-        <br />
+            <br />
+            <br />
         </div>
     );
 }

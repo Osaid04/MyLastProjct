@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import './Form.css';
-import CallToActionButton from '../ContactButton/CallToActionButton'; //import button 
+import CallToActionButton from '../ContactButton/CallToActionButton';
+
 const Form = () => {
-  /*to create form with fullname and email and message that is no value initial*/ 
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
         message: ''
     });
-    /* to update the form whne the user enter values in full name and email and message */ 
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -16,19 +18,27 @@ const Form = () => {
             [name]: value
         });
     };
-    /* return true if all filds is filling*/ 
+
     const isFormFilled = () => {
         return formData.fullName && formData.email && formData.message;
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (isFormFilled()) {
+            console.log('Form submitted:', formData);
+            // Handle form submission
+        }
+    };
+
     return (
         <div className="form-container">
-            <form className="contact-form" action="">
-                <h2>Send Message</h2>
+            <form className="contact-form" onSubmit={handleSubmit}>
+                <h2>{t('form.title')}</h2>
                 <input
                     type="text"
                     name="fullName"
-                    placeholder="Full Name"
+                    placeholder={t('form.fullNamePlaceholder')}
                     value={formData.fullName}
                     onChange={handleChange}
                     required
@@ -36,27 +46,25 @@ const Form = () => {
                 <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder={t('form.emailPlaceholder')}
                     value={formData.email}
                     onChange={handleChange}
                     required
                 />
                 <textarea
                     name="message"
-                    placeholder="Type your Message..."
+                    placeholder={t('form.messagePlaceholder')}
                     value={formData.message}
                     onChange={handleChange}
                     required
                 />
-                {/*if the fileds is not filed the class disabled invoked if filled the class enabled invoked*/ }
                 <CallToActionButton
-                    text="Send"
+                    text={t('form.submitButton')}
                     className={isFormFilled() ? "enabled-button" : "disabled-button"}
-                    
                 />
             </form>
         </div>
     );
-}
+};
 
 export default Form;

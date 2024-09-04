@@ -1,0 +1,23 @@
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  
+}
+
+
+.lang-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.lang-button:hover {
+  background-color: #0056b3;
+}

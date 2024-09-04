@@ -39,3 +39,60 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+@media screen and (max-width: 1024px) {
+
+    h1{
+        font-size: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .me{
+      
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    .me a{
+        text-decoration-line:none ;
+        color: #00bcd4;
+    
+    }
+    .family{
+         color: rgb(255, 255, 255); 
+           
+        }
+     #h2-family{
+         color: white;
+        
+     }
+     td{
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #1564da;
+        }
+        th{
+        color: #00bcd4;
+        background-color: #fffbfb;
+        }
+        .family caption{
+            font-size: 15px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+    .main-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .me p{
+        width: 400px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+    td{
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #1564da;
+        }
+
+}

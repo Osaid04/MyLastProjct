@@ -52,3 +52,148 @@
     top: 40px;
     
 }
+@media screen and (max-width: 1024px) {
+    
+.flex-1{
+  
+    
+    position: relative;
+    left: 80px;
+  
+}
+
+.flex-2{
+   
+    position: relative;
+    left: 80px;
+    bottom: 60px;
+   
+}
+.flex-3{
+    
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+    
+}
+
+.info-p{
+   
+    width: 120px;
+    position: relative;
+    bottom: 20px;
+}
+/* for all icons*/
+.photo{
+    width: 30px;
+    position: relative;
+    left: 35px;
+    bottom: 15px;
+    
+}
+/* for address photo i solve some problem*/
+.photo-1{
+    width: 30px;
+    position: relative;
+    left: 35px;
+    top: 40px;
+    
+}
+}
+@media screen and (max-width: 899px) {
+    
+    .flex-1{
+      
+        
+        position: relative;
+        left: 60px;
+      
+    }
+    
+    .flex-2{
+       
+        position: relative;
+        left: 60px;
+        bottom: 60px;
+       
+    }
+    .flex-3{
+        
+        position: relative;
+        left: 60px;
+        bottom: 80px;
+        
+    }
+    
+    .info-p{
+       
+        width: 110px;
+        position: relative;
+        bottom: 20px;
+    }
+    /* for all icons*/
+    .photo{
+        width: 30px;
+        position: relative;
+        left: 27px;
+        bottom: 15px;
+        
+    }
+    /* for address photo i solve some problem*/
+    .photo-1{
+        width: 30px;
+        position: relative;
+        left: 27px;
+        top: 40px;
+        
+    }
+    }
+    @media screen and (max-width: 830px) {
+    
+        .flex-1{
+          
+            
+            position: relative;
+            left: 40px;
+          
+        }
+        
+        .flex-2{
+           
+            position: relative;
+            left: 40px;
+            bottom: 60px;
+           
+        }
+        .flex-3{
+            
+            position: relative;
+            left: 40px;
+            bottom: 80px;
+            
+        }
+        
+        .info-p{
+           
+            width: 90px;
+            position: relative;
+            bottom: 20px;
+        }
+        /* for all icons*/
+        .photo{
+            width: 30px;
+            position: relative;
+            left: 7px;
+            bottom: 15px;
+            
+        }
+        /* for address photo i solve some problem*/
+        .photo-1{
+            width: 30px;
+            position: relative;
+            left: 7px;
+            top: 40px;
+            
+        }
+        }
+    

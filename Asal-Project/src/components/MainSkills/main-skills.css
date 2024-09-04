@@ -1,11 +1,12 @@
-.Skills h1{
+.Skills h1 {
     text-align: center;
     position: relative;
     bottom: 10px;
     right: 30px;
     font-size: 25px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 #block-90 {
     border: 1px solid black;
     width: 40%;
@@ -13,54 +14,49 @@
     border-radius: 10px;
     position: relative;
     left: 320px;
-
- /* for percent 90% to be in right in center using flex and align-items in end*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
 }
 
-
-#percent-90{
+#percent-90 {
     border: 1px solid black;
-   background-color: rgb(40, 133, 187);
+    background-color: rgb(40, 133, 187);
     height: 25px;
     border-radius: 10px;
     width: 35%;
-
     position: relative;
     bottom: 27px;
     left: 320px;
 }
-#block-85{
+
+#block-85 {
     border: 1px solid black;
     width: 40%;
     height: 25px;
-   
     border-radius: 10px;
     text-align: right;
     position: relative;
     left: 320px;
- /* for percent 85% to be in right in center using flex and align-items in end*/
- display: flex;
- align-items: center;
- justify-content: flex-end;
- padding-right: 10px;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
-#percent-85{
+
+#percent-85 {
     border: 1px solid black;
-   background-color: rgb(40, 133, 187);
+    background-color: rgb(40, 133, 187);
     height: 25px;
     border-radius: 10px;
     width: 32%;
-
     position: relative;
     bottom: 27px;
     left: 320px;
 }
-#block-75{
+
+#block-75 {
     border: 1px solid black;
     width: 40%;
     height: 25px;
@@ -68,16 +64,15 @@
     text-align: right;
     position: relative;
     left: 320px;
- /* for percent 75% to be in right in center using flex and align-items in end*/
- display: flex;
- align-items: center;
- justify-content: flex-end;
- padding-right: 10px;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
-#percent-75{
+
+#percent-75 {
     border: 1px solid black;
-   background-color: rgb(40, 133, 187);
+    background-color: rgb(40, 133, 187);
     height: 25px;
     border-radius: 10px;
     width: 29%;
@@ -85,7 +80,8 @@
     bottom: 27px;
     left: 320px;
 }
-#block-70{
+
+#block-70 {
     border: 1px solid black;
     width: 40%;
     height: 25px;
@@ -93,42 +89,40 @@
     text-align: right;
     position: relative;
     left: 320px;
- /* for percent 70% to be in right in center using flex and align-items in end*/
- display: flex;
- align-items: center;
- justify-content: flex-end;
- padding-right: 10px;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
-#percent-70{
+
+#percent-70 {
     border: 1px solid black;
-   background-color: rgb(40, 133, 187);
+    background-color: rgb(40, 133, 187);
     height: 25px;
     border-radius: 10px;
     width: 26%;
     position: relative;
     bottom: 27px;
     left: 320px;
-
 }
-#block-60{
+
+#block-60 {
     border: 1px solid black;
     width: 40%;
-    height: 25px;  
+    height: 25px;
     border-radius: 10px;
     text-align: right;
     position: relative;
     left: 320px;
- /* for percent 60% to be in right in center using flex and align-items in end*/
- display: flex;
- align-items: center;
- justify-content: flex-end;
- padding-right: 10px;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
-#percent-60{
+
+#percent-60 {
     border: 1px solid black;
-   background-color: rgb(40, 133, 187);
+    background-color: rgb(40, 133, 187);
     height: 25px;
     border-radius: 10px;
     width: 22%;
@@ -137,34 +131,312 @@
     left: 320px;
 }
 
-.flex{
-display: flex;
-justify-content: space-around;
+.flex {
+    display: flex;
+    justify-content: space-around;
 }
-.Skills p{
+
+.Skills p {
     position: relative;
     left: 500px;
 }
-#image1{
-    position: relative;
-    left: 20px;
-    width: 150px;;
-}
-#image2{
-    position: relative;
-   width: 170px;;
-    bottom: 600px;
-    right: 100px;
-}
-#image3{
-    position: relative;
-    left: 650px;
-    width: 150px;;
 
+@media screen and (max-width: 1024px) {
+    .Skills h1 {
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #block-90 {
+        position: relative;
+        left: 230px;
+    }
+
+    #percent-90 {
+        position: relative;
+        bottom: 27px;
+        left: 230px;
+    }
+
+    #block-85 {
+        position: relative;
+        left: 230px;
+    }
+
+    #percent-85 {
+        position: relative;
+        bottom: 27px;
+        left: 230px;
+    }
+
+    #block-75 {
+        position: relative;
+        left: 230px;
+    }
+
+    #percent-75 {
+        position: relative;
+        bottom: 27px;
+        left: 230px;
+    }
+
+    #block-70 {
+        position: relative;
+        left: 230px;
+    }
+
+    #percent-70 {
+        bottom: 27px;
+        left: 230px;
+    }
+
+    #block-60 {
+        position: relative;
+        left: 230px;
+    }
+
+    #percent-60 {
+        position: relative;
+        bottom: 27px;
+        left: 230px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Skills p {
+        position: relative;
+        left: 350px;
+    }
 }
-#image4{
-    position: relative;
-   width: 170px;;
-    bottom: 590px;
-    left: 450px;
+
+@media screen and (max-width: 850px) {
+    #block-90 {
+        position: relative;
+        left: 200px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    #percent-90 {
+        position: relative;
+        bottom: 27px;
+        left: 200px;
+    }
+
+    #block-85 {
+        position: relative;
+        left: 200px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    #percent-85 {
+        position: relative;
+        bottom: 27px;
+        left: 200px;
+    }
+
+    #block-75 {
+        position: relative;
+        left: 200px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    #percent-75 {
+        position: relative;
+        bottom: 27px;
+        left: 200px;
+    }
+
+    #block-70 {
+        position: relative;
+        left: 200px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    #percent-70 {
+        bottom: 27px;
+        left: 200px;
+    }
+
+    #block-60 {
+        position: relative;
+        left: 200px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    #percent-60 {
+        position: relative;
+        bottom: 27px;
+        left: 200px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Skills p {
+        position: relative;
+        left: 290px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #block-90 {
+        position: relative;
+        left: 150px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-90 {
+        position: relative;
+        bottom: 27px;
+        left: 140px;
+    }
+
+    #block-85 {
+        position: relative;
+        left: 140px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-85 {
+        position: relative;
+        bottom: 27px;
+        left: 140px;
+    }
+
+    #block-75 {
+        position: relative;
+        left: 140px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-75 {
+        position: relative;
+        bottom: 27px;
+        left: 140px;
+    }
+
+    #block-70 {
+        position: relative;
+        left: 140px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-70 {
+        bottom: 27px;
+        left: 140px;
+    }
+
+    #block-60 {
+        position: relative;
+        left: 140px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-60 {
+        position: relative;
+        bottom: 27px;
+        left: 140px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Skills p {
+        position: relative;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    #block-90 {
+        position: relative;
+        left: 115px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-90 {
+        position: relative;
+        bottom: 27px;
+        left: 115px;
+    }
+
+    #block-85 {
+        position: relative;
+        left: 115px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-85 {
+        position: relative;
+        bottom: 27px;
+        left: 115px;
+    }
+
+    #block-75 {
+        position: relative;
+        left: 115px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-75 {
+        position: relative;
+        bottom: 27px;
+        left: 115px;
+    }
+
+    #block-70 {
+        position: relative;
+        left: 115px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-70 {
+        bottom: 27px;
+        left: 115px;
+    }
+
+    #block-60 {
+        position: relative;
+        left: 115px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    #percent-60 {
+        position: relative;
+        bottom: 27px;
+        left: 115px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Skills p {
+        position: relative;
+        left: 140px;
+    }
 }

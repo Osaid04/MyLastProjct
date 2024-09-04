@@ -31,3 +31,105 @@ font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+@media screen and (max-width: 1024px) {
+
+    h1{
+        text-align: center;
+    color: rgb(10, 165, 255);
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    #contact-p{
+        text-align: center;
+        font-size: 16px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      
+    }
+    #second-h1{
+    position: relative;
+    bottom: 370px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    #Social {
+        position: relative;
+        bottom: 280px;
+        left: 50px;
+        padding: 20px;
+        width: 600px;
+        background-color: #f0f0f0; 
+        border: 2px solid #ccc; 
+        border-radius: 10px; 
+        
+        text-align: right;
+        margin-right: 10px;
+        font-size: 18px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+}
+@media screen and (max-width: 925px) {
+    #Social {
+        position: relative;
+        bottom: 280px;
+        left: 50px;
+        padding: 15px;
+        width: 550px;
+        background-color: #f0f0f0; 
+        border: 2px solid #ccc; 
+        border-radius: 10px; 
+        
+        text-align: right;
+        margin-right: 10px;
+        font-size: 18px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+}
+@media screen and (max-width: 850px) {
+    #Social {
+       
+        width: 500px;
+       
+    }
+
+
+}
+@media screen and (max-width: 750px) {
+    #Social {
+       
+        width: 450px;
+       
+    }
+
+
+}
+@media screen and (max-width: 710px) {
+    #Social {
+       
+        width: 400px;
+       
+    }
+
+
+}
+@media screen and (max-width: 640px) {
+    #Social {
+       
+        width: 350px;
+       
+    }
+
+
+}
+@media screen and (max-width: 640px) {
+    #Social {
+       
+        width: 300px;
+       
+    }
+
+
+}

@@ -7,13 +7,13 @@ import Contact from './components/Contact/Contact'
 import AboutMe from './components/AboutMe/AboutMe'
 import Projects from './components/Projects/Project'
 import './App.css';
-
+import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher'; // Import LanguageSwitcher
 function App() {
   return (
     <Router>
       <div className="App">
         <Header /> {/* header is out the rout becuse its want to sowne in all pages*/ } 
-    
+        <LanguageSwitcher /> {/* Add LanguageSwitcher here */}
         <Routes>
          
           <Route path="/skills" element={<MainSkills />} />

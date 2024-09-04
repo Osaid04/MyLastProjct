@@ -1,28 +1,37 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import axios from 'axios'; // Import axios
 import './Project.css';
 
 const Projects = () => {
+  const { t } = useTranslation(); // Initialize useTranslation hook
+
   const [projects, setProjects] = useState([]);
+  const [newProjects, setNewProjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [newProject, setNewProject] = useState({ title: '', description: '', link: '' });
 
-  // Fetch the projects from localStorage or JSON file
   useEffect(() => {
-    const storedProjects = localStorage.getItem('projects');
+    const fetchProjects = async () => {
+      try {
+        const response = await axios.get('/data/db.json'); // Use axios to fetch data
+        setProjects(response.data.projects); // Access the data through response.data
+      } catch (error) {
+        console.error('Error fetching projects:', error);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
+  useEffect(() => {
+    const storedProjects = localStorage.getItem('newProjects');
     if (storedProjects) {
-      setProjects(JSON.parse(storedProjects));
-    } else {
-      fetch('../../data/db.json')
-        .then((response) => response.json())
-        .then((data) => {
-          setProjects(data.projects);
-          localStorage.setItem('projects', JSON.stringify(data.projects));
-        })
-        .catch((error) => console.error('Error fetching projects:', error));
+      setNewProjects(JSON.parse(storedProjects));
     }
   }, []);
 
-  const filteredProjects = projects.filter((project) =>
+  const filteredProjects = [...projects, ...newProjects].filter((project) =>
     project.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -33,26 +42,26 @@ const Projects = () => {
 
   const handleAddProject = () => {
     if (newProject.title && newProject.description && newProject.link) {
-      const updatedProjects = [...projects, newProject];
-      setProjects(updatedProjects);
-      localStorage.setItem('projects', JSON.stringify(updatedProjects)); // Update localStorage
+      const updatedNewProjects = [...newProjects, newProject];
+      setNewProjects(updatedNewProjects);
+      localStorage.setItem('newProjects', JSON.stringify(updatedNewProjects));
       setNewProject({ title: '', description: '', link: '' });
     }
   };
 
   const handleDeleteProject = (indexToDelete) => {
-    const updatedProjects = projects.filter((_, index) => index !== indexToDelete);
-    setProjects(updatedProjects);
-    localStorage.setItem('projects', JSON.stringify(updatedProjects)); // Update localStorage
+    const updatedNewProjects = newProjects.filter((_, index) => index !== indexToDelete);
+    setNewProjects(updatedNewProjects);
+    localStorage.setItem('newProjects', JSON.stringify(updatedNewProjects));
   };
 
   return (
     <div className="projects-container">
-      <h1>My Projects</h1>
+      <h1>{t('projects.title')}</h1>
 
       <input
         type="text"
-        placeholder="Search projects..."
+        placeholder={t('projects.searchPlaceholder')}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-input"
@@ -63,23 +72,25 @@ const Projects = () => {
           <div key={index} className="project-card">
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <a href={project.link}>View Project</a>
-            <button 
-              className="delete-button" 
-              onClick={() => handleDeleteProject(index)}
-            >
-              Delete
-            </button>
+            <a href={project.link}>{t('projects.viewProject')}</a>
+            {newProjects.includes(project) && (
+              <button
+                className="delete-button"
+                onClick={() => handleDeleteProject(newProjects.indexOf(project))}
+              >
+                {t('projects.deleteButton')}
+              </button>
+            )}
           </div>
         ))}
       </div>
 
       <div className="add-project">
-        <h2>Add a New Project</h2>
+        <h2>{t('projects.addNewProject')}</h2>
         <input
           type="text"
           name="title"
-          placeholder="Project Title"
+          placeholder={t('projects.projectTitlePlaceholder')}
           value={newProject.title}
           onChange={handleInputChange}
           className="add-input"
@@ -87,7 +98,7 @@ const Projects = () => {
         <input
           type="text"
           name="description"
-          placeholder="Project Description"
+          placeholder={t('projects.projectDescriptionPlaceholder')}
           value={newProject.description}
           onChange={handleInputChange}
           className="add-input"
@@ -95,12 +106,14 @@ const Projects = () => {
         <input
           type="text"
           name="link"
-          placeholder="Project Link"
+          placeholder={t('projects.projectLinkPlaceholder')}
           value={newProject.link}
           onChange={handleInputChange}
           className="add-input"
         />
-        <button onClick={handleAddProject} className="add-button">Add Project</button>
+        <button onClick={handleAddProject} className="add-button">
+          {t('projects.addButton')}
+        </button>
       </div>
     </div>
   );
